@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:toku_app/models/item_model.dart';
 
-import 'package:toku_app/widgets/phrase_item.dart';
+import 'package:toku_app/widgets/item_info.dart';
 
 class PhrasesView extends StatelessWidget {
   const PhrasesView({super.key});
@@ -73,7 +73,7 @@ class PhrasesView extends StatelessWidget {
       body: ListView.builder(
         itemCount: phrases.length,
         itemBuilder: (context, index) {
-          return PhraseItem(
+          return ItemInfo(
             itemModel: phrases[index],
             color: const Color(0xff4fadc8),
           );

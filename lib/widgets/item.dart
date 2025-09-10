@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:toku_app/models/item_model.dart';
-import 'package:toku_app/widgets/phrase_item.dart';
+import 'package:toku_app/widgets/item_info.dart';
 
 class Item extends StatelessWidget {
   const Item({
@@ -25,7 +25,7 @@ class Item extends StatelessWidget {
           ),
           Expanded(
             child: SizedBox(
-              child: PhraseItem(itemModel: itemModel, color: color),
+              child: ItemInfo(itemModel: itemModel, color: color),
             ),
           ),
         ],

@@ -2,8 +2,8 @@ import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:toku_app/models/item_model.dart';
 
-class PhraseItem extends StatelessWidget {
-  const PhraseItem({
+class ItemInfo extends StatelessWidget {
+  const ItemInfo({
     super.key,
     required this.itemModel,
     required this.color,
