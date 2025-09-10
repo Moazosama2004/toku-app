@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:toku_app/models/number_model.dart';
+import 'package:toku_app/models/item_model.dart';
 import 'package:toku_app/widgets/item.dart';
 
 class FamilyMembersView extends StatelessWidget {
@@ -90,7 +90,7 @@ class FamilyMembersView extends StatelessWidget {
         itemCount: familyMembers.length,
         itemBuilder: (context, index) {
           return Item(
-            number: familyMembers[index],
+            itemModel: familyMembers[index],
             color: const Color(0xff568a35),
           );
         },

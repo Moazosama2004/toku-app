@@ -1,10 +1,14 @@
-import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
-import 'package:toku_app/models/number_model.dart';
+import 'package:toku_app/models/item_model.dart';
+import 'package:toku_app/widgets/phrase_item.dart';
 
 class Item extends StatelessWidget {
-  const Item({super.key, required this.number, required this.color});
-  final ItemModel number;
+  const Item({
+    super.key,
+    required this.itemModel,
+    required this.color,
+  });
+  final ItemModel itemModel;
   final Color color;
 
   @override
@@ -17,42 +21,11 @@ class Item extends StatelessWidget {
             width: 100,
             height: 100,
             color: const Color(0xfffef5da),
-            child: Image.asset(number.image),
+            child: Image.asset(itemModel.image!),
           ),
           Expanded(
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Padding(
-                  padding: const EdgeInsets.only(left: 16),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      Text(
-                        number.jp,
-                        style: const TextStyle(color: Colors.white),
-                      ),
-                      Text(
-                        number.en,
-                        style: const TextStyle(color: Colors.white),
-                      ),
-                    ],
-                  ),
-                ),
-                IconButton(
-                  onPressed: () {
-                    final player = AudioPlayer();
-                    player.play(AssetSource(number.sound));
-                  },
-                  icon: const Icon(
-                    Icons.play_arrow,
-                    color: Colors.white,
-                    size: 30,
-                  ),
-                ),
-              ],
+            child: SizedBox(
+              child: PhraseItem(itemModel: itemModel, color: color),
             ),
           ),
         ],

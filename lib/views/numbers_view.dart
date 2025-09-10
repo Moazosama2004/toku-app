@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:toku_app/models/number_model.dart';
+import 'package:toku_app/models/item_model.dart';
 import 'package:toku_app/widgets/item.dart';
 
 class NumbersView extends StatelessWidget {
@@ -88,7 +88,7 @@ class NumbersView extends StatelessWidget {
         itemCount: numbers.length,
         itemBuilder: (context, index) {
           return Item(
-            number: numbers[index],
+            itemModel: numbers[index],
             color: const Color(0xffef9137),
           );
         },
