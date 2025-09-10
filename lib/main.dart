@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:toku_app/views/home_view.dart';
 
 void main() {
-  runApp(TokuApp());
+  runApp(const TokuApp());
 }
 
 class TokuApp extends StatelessWidget {
@@ -10,7 +10,7 @@ class TokuApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: HomeView(),
     );
