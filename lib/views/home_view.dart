@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:toku_app/views/numbers_view.dart';
 import 'package:toku_app/widgets/category_item.dart';
 
 class HomeView extends StatelessWidget {
@@ -18,28 +19,48 @@ class HomeView extends StatelessWidget {
             text: 'Numbers',
             color: Color(0xffef9137),
             onTap: () {
-              print('pressed');
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => NumbersView(),
+                ),
+              );
             },
           ),
           Category(
             text: 'Family Members',
             color: Color(0xff568a35),
             onTap: () {
-              print('pressed');
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => NumbersView(),
+                ),
+              );
             },
           ),
           Category(
             text: 'Colors',
             color: Color(0xff78339e),
             onTap: () {
-              print('pressed');
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => NumbersView(),
+                ),
+              );
             },
           ),
           Category(
             text: 'Phrases',
             color: Color(0xff4fadc8),
             onTap: () {
-              print('pressed');
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => NumbersView(),
+                ),
+              );
             },
           ),
         ],
