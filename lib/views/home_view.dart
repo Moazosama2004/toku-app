@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:toku_app/views/family_members_view.dart';
 import 'package:toku_app/views/numbers_view.dart';
 import 'package:toku_app/widgets/category_item.dart';
 
@@ -34,7 +35,7 @@ class HomeView extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => NumbersView(),
+                  builder: (context) => FamilyMembersView(),
                 ),
               );
             },

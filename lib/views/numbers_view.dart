@@ -77,12 +77,20 @@ class NumbersView extends StatelessWidget {
           style: TextStyle(color: Colors.white),
         ),
         backgroundColor: const Color(0xff47312b),
-        leading: const Icon(Icons.arrow_back, color: Colors.white),
+        leading: IconButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          icon: const Icon(Icons.arrow_back, color: Colors.white),
+        ),
       ),
       body: ListView.builder(
         itemCount: numbers.length,
         itemBuilder: (context, index) {
-          return Item(number: numbers[index]);
+          return Item(
+            number: numbers[index],
+            color: const Color(0xffef9137),
+          );
         },
       ),
     );

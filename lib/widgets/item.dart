@@ -3,13 +3,14 @@ import 'package:flutter/material.dart';
 import 'package:toku_app/models/number_model.dart';
 
 class Item extends StatelessWidget {
-  const Item({super.key, required this.number});
+  const Item({super.key, required this.number, required this.color});
   final NumberModel number;
+  final Color color;
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: const Color(0xffef9137),
+      color: color,
       child: Row(
         children: [
           Container(
