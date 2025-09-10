@@ -39,8 +39,7 @@ class PhraseItem extends StatelessWidget {
           ),
           IconButton(
             onPressed: () {
-              final player = AudioPlayer();
-              player.play(AssetSource(itemModel.sound));
+              itemModel.playSound();
             },
             icon: const Icon(
               Icons.play_arrow,
