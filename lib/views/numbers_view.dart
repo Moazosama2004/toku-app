@@ -65,7 +65,7 @@ class NumbersView extends StatelessWidget {
         backgroundColor: Color(0xff47312b),
         leading: Icon(Icons.arrow_back, color: Colors.white),
       ),
-      body: Column(
+      body: ListView(
         children: generateNumbers(numbers),
         // children: List.generate(
         //   numbers.length,
