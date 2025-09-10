@@ -5,21 +5,26 @@ class Category extends StatelessWidget {
     super.key,
     required this.color,
     required this.text,
+    this.onTap,
   });
   final Color color;
   final String text;
+  final Function()? onTap;
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 65,
-      width: double.infinity,
-      color: color,
-      alignment: Alignment.centerLeft,
-      padding: EdgeInsets.only(left: 16.0),
-      child: Text(
-        text,
-        style: TextStyle(color: Colors.white, fontSize: 18),
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        height: 65,
+        width: double.infinity,
+        color: color,
+        alignment: Alignment.centerLeft,
+        padding: EdgeInsets.only(left: 16.0),
+        child: Text(
+          text,
+          style: TextStyle(color: Colors.white, fontSize: 18),
+        ),
       ),
     );
   }

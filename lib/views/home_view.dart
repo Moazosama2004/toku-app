@@ -14,10 +14,34 @@ class HomeView extends StatelessWidget {
       ),
       body: Column(
         children: [
-          Category(text: 'Numbers', color: Color(0xffef9137)),
-          Category(text: 'Family Members', color: Color(0xff568a35)),
-          Category(text: 'Colors', color: Color(0xff78339e)),
-          Category(text: 'Phrases', color: Color(0xff4fadc8)),
+          Category(
+            text: 'Numbers',
+            color: Color(0xffef9137),
+            onTap: () {
+              print('pressed');
+            },
+          ),
+          Category(
+            text: 'Family Members',
+            color: Color(0xff568a35),
+            onTap: () {
+              print('pressed');
+            },
+          ),
+          Category(
+            text: 'Colors',
+            color: Color(0xff78339e),
+            onTap: () {
+              print('pressed');
+            },
+          ),
+          Category(
+            text: 'Phrases',
+            color: Color(0xff4fadc8),
+            onTap: () {
+              print('pressed');
+            },
+          ),
         ],
       ),
     );
