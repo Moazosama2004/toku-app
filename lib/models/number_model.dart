@@ -1,10 +1,10 @@
-class NumberModel {
+class ItemModel {
   final String image;
   final String en;
   final String jp;
   final String sound;
 
-  const NumberModel({
+  const ItemModel({
     required this.image,
     required this.en,
     required this.jp,

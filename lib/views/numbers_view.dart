@@ -4,62 +4,62 @@ import 'package:toku_app/widgets/item.dart';
 
 class NumbersView extends StatelessWidget {
   const NumbersView({super.key});
-  final List<NumberModel> numbers = const [
-    NumberModel(
+  final List<ItemModel> numbers = const [
+    ItemModel(
       en: 'one',
       jp: 'ichi',
       image: 'assets/images/numbers/number_one.png',
       sound: 'sounds/numbers/number_one_sound.mp3',
     ),
-    NumberModel(
+    ItemModel(
       en: 'two',
       jp: 'ni',
       image: 'assets/images/numbers/number_two.png',
       sound: 'sounds/numbers/number_two_sound.mp3',
     ),
-    NumberModel(
+    ItemModel(
       en: 'three',
       jp: 'san',
       image: 'assets/images/numbers/number_three.png',
       sound: 'sounds/numbers/number_three_sound.mp3',
     ),
-    NumberModel(
+    ItemModel(
       en: 'four',
       jp: 'shi',
       image: 'assets/images/numbers/number_four.png',
       sound: 'sounds/numbers/number_four_sound.mp3',
     ),
-    NumberModel(
+    ItemModel(
       en: 'five',
       jp: 'go',
       image: 'assets/images/numbers/number_five.png',
       sound: 'sounds/numbers/number_five_sound.mp3',
     ),
-    NumberModel(
+    ItemModel(
       en: 'six',
       jp: 'roku',
       image: 'assets/images/numbers/number_six.png',
       sound: 'sounds/numbers/number_six_sound.mp3',
     ),
-    NumberModel(
+    ItemModel(
       en: 'seven',
       jp: 'shichi',
       image: 'assets/images/numbers/number_seven.png',
       sound: 'sounds/numbers/number_seven_sound.mp3',
     ),
-    NumberModel(
+    ItemModel(
       en: 'eight',
       jp: 'hachi',
       image: 'assets/images/numbers/number_eight.png',
       sound: 'sounds/numbers/number_eight_sound.mp3',
     ),
-    NumberModel(
+    ItemModel(
       en: 'nine',
       jp: 'kyuu',
       image: 'assets/images/numbers/number_nine.png',
       sound: 'sounds/numbers/number_nine_sound.mp3',
     ),
-    NumberModel(
+    ItemModel(
       en: 'ten',
       jp: 'juu',
       image: 'assets/images/numbers/number_ten.png',

@@ -4,7 +4,7 @@ import 'package:toku_app/models/number_model.dart';
 
 class Item extends StatelessWidget {
   const Item({super.key, required this.number, required this.color});
-  final NumberModel number;
+  final ItemModel number;
   final Color color;
 
   @override
