@@ -65,11 +65,15 @@ class NumbersView extends StatelessWidget {
         backgroundColor: Color(0xff47312b),
         leading: Icon(Icons.arrow_back, color: Colors.white),
       ),
-      body: ListView(
-        children: generateNumbers(numbers),
+      body: ListView.builder(
+        itemCount: numbers.length,
+        itemBuilder: (context, index) {
+          return Item(number: numbers[index]);
+        },
+        // children: generateNumbers(numbers),
         // children: List.generate(
         //   numbers.length,
-        //   (index) => NumberItem(number: numbers[index]),
+        //   (index) => Item(number: numbers[index]),
         // ),
       ),
     );
